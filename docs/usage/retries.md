@@ -8,7 +8,7 @@ To configure the default retry policy for the entire bus.
 ```csharp
 Bus.Factory.CreateUsingInMemory(cfg =>
 {
-    cfg.UseRetry(retryConfig => retryConfig.None);
+    cfg.UseRetry(retryConfig => retryConfig.None());
 });
 ```
 
